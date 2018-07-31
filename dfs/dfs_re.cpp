@@ -4,18 +4,18 @@ using namespace std;
 void dfs(vector <long int >v[],int vi[],long int sn)
 {
 	vi[sn]=1;
-	for(i=0;i<v[sn].size();i++)
+	for(long int i=0;i<v[sn].size();i++)
 	  {
-	  	 if(vi[v[i][sn]]==0)
+	  	 if(vi[v[sn][i]]==0)
 	  	   {
-	  	   	  dfs(v,vi,v[i][sn]);
+	  	   	  dfs(v,vi,v[sn][i]);
 	  	   }
 	  }
 }
 
 
 int main() {
-    int n,m,x,y;
+    int n,m,x,y,i;
     cin>>n>>m;
     vector <long int >v[n+1];
     while(m--)
@@ -24,13 +24,13 @@ int main() {
       	  v[x].push_back(y);
       	  v[y].push_back(x);
       }
-     int visted[n+1] 
-    for(i=1;i<=n;i++)
+     int visted[n+1]; 
+    for(i=0;i<=n;i++)
       {
-      	vi[i]=0
+      	visted[i]=0;
       }
      long int sn; 
       cin>>sn;
-    dfs(v,vi,sn);  
+    dfs(v,visted,sn);
 	return 0;
 }
