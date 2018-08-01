@@ -25,7 +25,7 @@ void dfs(vector <long int>v[],int vi[],long int sn)
 
 
 int main() {
-	int n,m;
+	int n,m,i,x,y;
 	cin>>n>>m;
 	vector <long int >v[n+1];
 	while(m--)
