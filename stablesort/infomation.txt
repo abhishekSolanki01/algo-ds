@@ -1,0 +1,8 @@
+sort fuction  is using introsort function
+stable sort is using the merge sort algorithm
+
+introsort fuction does not have stable sort 
+but merge sort and insertions sort,bubble sort is stable in nature because the a[j]<a[i] then they are excahnge if a[j]==a[i]
+then it preserve the order.
+
+intro sort is hybrid fucnction using quicksort,insertion sort,heap sort.
