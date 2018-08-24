@@ -1,3 +1,10 @@
+/*
+You're given a tree with 
+n
+ vertices.
+
+Your task is to determine the maximum possible number of edges that can be removed in such a way that all the remaining connected components will have even size.*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
